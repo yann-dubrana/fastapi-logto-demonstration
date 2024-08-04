@@ -13,7 +13,7 @@ For additional context about this project, you can visit:
 ## Implementation
 
 This project uses native FastAPI functions to implement Logto authentication without requiring a Python Logto client.
-This approach relies heavily on FastAPI's built-in functionalities, which offer robust and secure ways to handle
+This approach relies heavily on FastAPI built-in functionalities, which offer robust and secure ways to handle
 authentication and authorization. 
 
 ### Logto Authentication and the Concept of Resource
