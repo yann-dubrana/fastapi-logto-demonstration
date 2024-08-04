@@ -1,0 +1,4 @@
+### M2M
+GET  http://localhost:8000/secure-endpoint HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Authorization: Bearer {{$auth.token("m2m")}}
