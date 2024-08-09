@@ -97,7 +97,13 @@ class DocumentationRouter:
                     "clientSecret": auth_settings.client_secret,
                     "resource": auth_settings.resource,
                     "scopes": auth_settings.scopes.split(','),
-                }
+                    "additionalQueryStringParams": {
+                        "resource": auth_settings.resource
+                    }
+                },
+                swagger_ui_parameters={
+                    "persistAuthorization": False,
+                },
             )
 
         @self.router.get(self.swagger_ui_oauth2_redirect_url, include_in_schema=False)
